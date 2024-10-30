@@ -1,0 +1,13 @@
+services:
+  site-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: site-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /node_modules
+    environment:
+      - NODE_ENV=development
