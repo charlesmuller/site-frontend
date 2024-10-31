@@ -3,8 +3,8 @@
     <v-main class="flex-grow-1">
       <MainContent />
     </v-main>
-    <v-footer app color="background" dark>
-      <span class="white--text">Footer fixo na parte inferior</span>
+    <v-footer app color="background">
+      <span class="white--text">Charles Müller</span>
     </v-footer>
   </v-app>
 </template>

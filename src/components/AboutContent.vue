@@ -1,73 +1,58 @@
 <template>
     <div class="main-about-container">
-        <div class="img-container">
-            <img src="/public/foto-perfil2.jpg" alt="Profile Picture">
-        </div>
-        <div class="card-content">
-            <v-card class="custom-card mx-auto my-8" elevation="16">
-                <v-card-item>
-                    <v-card-title>
-                        Professional Profile
+        <v-row align="center" justify="center" dense>
+            <!-- Card 1 -->
+            <v-col cols="12"> <!-- Ocupa toda a largura em telas pequenas -->
+                <v-card class="mx-auto" prepend-icon="mdi-account"
+                    subtitle="Web Developer since 2021" title="Professional Profile">
+                    <v-card-text>
+                        Graduated in Systems Analysis and Development from Universidade Luterana do Brasil,
+                        with a Postgraduate Degree in Software Engineering from Universidade do Vale dos Sinos. 
+                        Experienced in developing efficient, results-oriented solutions with a focus on web technologies and agile methodologies.
+                    </v-card-text>
+                </v-card>
+            </v-col>
 
-                    </v-card-title>
+            <!-- Card 2 -->
+            <v-col cols="12"> <!-- Ocupa toda a largura em telas pequenas -->
+                <v-card class="mx-auto" subtitle="Programming Languages" title="Technical Skills">
+                    <template v-slot:prepend>
+                        <v-icon color="primary" icon="mdi-account"></v-icon>
+                    </template>
+                    <v-card-text>HTML, CSS, JavaScript, PHP, SQL</v-card-text>
+                </v-card>
+            </v-col>
 
-                    <v-card-subtitle>
-                        Web Developer since 2021
-                    </v-card-subtitle>
-                </v-card-item>
-
-                <v-card-text>
-                    Graduated in Systems Analysis and Development from Universidade Luterana do Brasil, with a
-                    Postgraduate
-                    Degree in Software Engineering from Universidade do Vale dos Sinos. Experienced in developing
-                    efficient,
-                    results-oriented solutions with a focus on web technologies and agile methodologies.
-                </v-card-text>
-            </v-card>
-            <v-divider :thickness="4"></v-divider>
-            <v-card class="custom-card mx-auto my-8" elevation="16">
-                <v-card-item>
-                    <v-card-title>
-                        Technical Skills
-                    </v-card-title>
-
-                    <v-card-subtitle>
-                        Programming Languages
-                    </v-card-subtitle>
-                </v-card-item>
-
-                <v-card-text>
-                    HTML, CSS, JavaScript, PHP, SQL
-                </v-card-text>
-            </v-card>
-        </div>
-
+            <!-- Card 3 -->
+            <v-col cols="12"> <!-- Ocupa toda a largura em telas pequenas -->
+                <v-card class="mx-auto" subtitle="" title="Frameworks and Libraries">
+                    <template v-slot:prepend>
+                        <v-avatar color="blue-darken-2">
+                            <v-icon icon="mdi-alarm"></v-icon>
+                        </v-avatar>
+                    </template>
+                    <v-card-text>Docker, Vue.js, Laravel, React</v-card-text>
+                </v-card>
+            </v-col>
+        </v-row>
     </div>
 </template>
 
 <style scoped>
 .main-about-container {
     display: flex;
-    flex-direction: row;
-}
-
-.img-container {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    min-height: 100vh;
+    flex-direction: column; /* Permite empilhar os cards */
+    background-color: #E0F7FA;
 }
 
 .custom-card {
     max-width: none !important;
     width: auto;
 }
+
 .card-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
 
-}
-::v-deep .custom-card {
-    
-}
 </style>
