@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="hero" style="background-color: #E3F2FD;">
+    <v-container fluid class="hero">
         <v-row class="main-card-board">
             <v-card class="text-card" variant="tonal">
                 <div class="content">
@@ -9,9 +9,7 @@
                     <div class="text-content">
                         <v-card-title class="title">Hello! I am Charles Müller</v-card-title>
                         <v-card-text class="card-description">
-                            A web developer passionate about creating innovative digital solutions. My journey in
-                            development began in 2021, and since then, I have been dedicated to enhancing my skills and
-                            contributing to meaningful projects.
+                            
                         </v-card-text>
                     </div>
                 </div>
@@ -28,7 +26,7 @@
     background-size: cover;
     background-position: center;
     color: white;
-    background-color: #E3F2FD;
+    background-color:#FFFCF5;
     align-items: center;
 }
 

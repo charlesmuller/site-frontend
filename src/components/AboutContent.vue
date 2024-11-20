@@ -42,7 +42,7 @@
 .main-about-container {
     display: flex;
     flex-direction: column; /* Permite empilhar os cards */
-    background-color: #E0F7FA;
+    background-color: #FFFCF5;
 }
 
 .custom-card {

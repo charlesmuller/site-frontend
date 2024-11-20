@@ -15,7 +15,7 @@ export default createVuetify({
           success: '#4CAF50', // Verde para sucesso
           warning: '#FFC107', // Amarelo para avisos
           error: '#FF5252', // Vermelho para erros
-          background: '#E3F2FD', // Azul muito claro para fundo
+          background: '#FFFCF5', // Azul muito claro para fundo
         },
       },
       dark: {

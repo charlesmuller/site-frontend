@@ -1,29 +1,49 @@
 <template>
-  <v-app class="d-flex flex-column fill-height">
-    <v-main class="flex-grow-1">
+  <div class="app-container">
+    <NavBarSite />
+    <div class="main-content">
       <MainContent />
-    </v-main>
-    <v-footer app color="background">
-      <span class="white--text">Charles Müller</span>
-    </v-footer>
-  </v-app>
+    </div>
+    <FooterBarSite />
+  </div>
 </template>
 
 <script>
+import NavBarSite from './components/NavBarSite.vue';
 import MainContent from './components/MainContent.vue';
+import FooterBarSite from './components/FooterBarSite.vue';
 
 export default {
   name: 'App',
   components: {
-    MainContent
+    NavBarSite,
+    MainContent,
+    FooterBarSite
   },
 };
 </script>
 
 <style>
-.fill-height {
-  min-height: 100vh;
+html,
+body,
+.app-container {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
   display: flex;
   flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #E8E8E3;
+  padding: 10px;
+  text-align: center;
 }
 </style>

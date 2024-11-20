@@ -5,12 +5,6 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 blockquote,
 pre,
@@ -87,6 +81,10 @@ video {
 	vertical-align: baseline;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	/* font-family: 'Maragsa', sans-serif; */
+  }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -103,10 +101,9 @@ section {
 }
 
 body {
-	background-color: var(--v-background-base);
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Maragsa', sans-serif;	 */
 	line-height: 1;
 }
 
@@ -131,4 +128,12 @@ q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'Maragsa';
+	src: url('@/assets/fonts/Maragsa-Display.woff2') format('woff2'),
+		url('@/assets/fonts/Maragsa-display.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
