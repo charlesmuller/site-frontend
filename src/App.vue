@@ -37,6 +37,7 @@ body,
 }
 
 .main-content {
+  margin-top: 5%;
   flex-grow: 1;
 }
 

@@ -29,7 +29,7 @@
     border-radius: 15px;
     transition: background-color 0.3s;
     width: 80%;
-    max-width: 800px;
+    max-width: 70%;
     margin: 30px auto;
     align-items: center;
 }

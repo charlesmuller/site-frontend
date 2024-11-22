@@ -82,7 +82,7 @@ export default {
   align-items: center;
   padding: 10px;
   width: 80%;
-  max-width: 800px;
+  max-width: 70%;
   margin: 30px auto;
   align-items: center;
 
@@ -108,7 +108,7 @@ export default {
 .data-box {
   display: flex;
   width: 100%;
-  max-width: 800px;
+  max-width: 70%;
   align-items: center;
 }
 
