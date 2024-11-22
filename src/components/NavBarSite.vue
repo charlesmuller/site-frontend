@@ -1,16 +1,13 @@
 <template>
     <div class="main-nav-menu">
         <div class="nav-item">
-            <a href=""><img src="/src/assets/icon-home.svg" alt="home icon"></a>
+            <router-link to="/"><img src="/src/assets/icon-home.svg" alt="home icon"></router-link>
         </div>
         <div class="nav-item">
-            <a href="">Work</a>
+            <router-link to="/about">About</router-link>
         </div>
         <div class="nav-item">
-            <a href="">About</a>
-        </div>
-        <div class="nav-item">
-            <a href="">Contatc</a>
+            <a href="mailto:charlesmuller@rede.ulbra.br">Contact</a>
         </div>
     </div>
 </template>

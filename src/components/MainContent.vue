@@ -19,10 +19,18 @@
             <p>Full Stack Developer</p>
           </div>
           <div class="main-about">
-            <img src="/src/assets/icons-github.svg" alt="home icon">
-            <img src="/src/assets/icons-instagram.svg" alt="home icon">
-            <img src="/src/assets/icons-linkedin.svg" alt="home icon">
-            <img src="/src/assets/icons-twitterx.svg" alt="home icon">
+            <a href="https://github.com/charlesmuller" target="_blank">
+              <img src="/src/assets/icons-github.svg" alt="home icon">
+            </a>
+            <a href="https://www.instagram.com/charlesrullem/" target="_blank">
+              <img src="/src/assets/icons-instagram.svg" alt="home icon">
+            </a>
+            <a href="https://www.linkedin.com/in/charles-m%C3%BCller-da-silva-535555108/" target="_blank">
+              <img src="/src/assets/icons-linkedin.svg" alt="home icon">
+            </a>
+            <a href="https://x.com/charlesrullem" target="_blank">
+              <img src="/src/assets/icons-twitterx.svg" alt="home icon">
+            </a>
           </div>
         </div>
       </div>
@@ -117,6 +125,9 @@ export default {
   justify-content: center;
   align-items: center;
   width: 60%;
+}
+.main-about a {
+  cursor: pointer;
 }
 
 .data-box img {
