@@ -9,7 +9,7 @@
           <p>
             A web developer passionate about creating innovative digital solutions. My
             journey in
-            development began in 2021, and since then, I have been dedicated to enhancing my skills and
+            development began in 2022, and since then, I have been dedicated to enhancing my skills and
             contributing to meaningful projects.
           </p>
         </div>
@@ -39,23 +39,22 @@
       <div class="main-list">
         <ul>
           <li>
-            <a>
+            <router-link to="/things-about-me">
               <img src="/src/assets/profile.svg">
-            </a>
-            <p>Things about me</p>
-
+              <p>Things about me</p>
+            </router-link>
           </li>
           <li>
-            <a>
+            <router-link to="/work-history">
               <img src="/src/assets/book.svg">
-            </a>
-            <p>Work history</p>
+              <p>Work history</p>
+            </router-link>
           </li>
           <li>
-            <a>
+            <router-link to="/my-blog">
               <img src="/src/assets/pencil.svg">
-            </a>
-            <p>My blog (in progress)</p>
+              <p>My blog (in progress)</p>
+            </router-link>
           </li>
         </ul>
       </div>
@@ -64,19 +63,9 @@
 </template>
 
 <script>
-
 export default {
-  components: {
-  },
-  data() {
-    return {
-
-    }
-  },
-  methods: {
-
-  }
-}
+  name: 'MainContent',
+};
 </script>
 
 <style>
@@ -126,6 +115,7 @@ export default {
   align-items: center;
   width: 60%;
 }
+
 .main-about a {
   cursor: pointer;
 }
@@ -161,11 +151,17 @@ export default {
   transform: scale(1.1);
 }
 
+.content-header-right a {
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.2s ease;
+}
+
 .content-header-right a:hover {
   background-color: #E8E8E3;
+  border-radius: 5px;
   color: #212320;
   transform: scale(1.1);
   cursor: pointer;
+  width: 100%;
 }
 
 .main-list ul {
@@ -180,5 +176,13 @@ export default {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.main-list a {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #212320;
 }
 </style>

@@ -1,8 +1,7 @@
 <template>
     <div class="main-about-container">
         <v-row align="center" justify="center" dense>
-            <!-- Card 1 -->
-            <v-col cols="12"> <!-- Ocupa toda a largura em telas pequenas -->
+            <v-col cols="12">
                 <v-card class="mx-auto" prepend-icon="mdi-account"
                     subtitle="Web Developer since 2021" title="Professional Profile">
                     <v-card-text>
@@ -12,9 +11,7 @@
                     </v-card-text>
                 </v-card>
             </v-col>
-
-            <!-- Card 2 -->
-            <v-col cols="12"> <!-- Ocupa toda a largura em telas pequenas -->
+            <v-col cols="12">
                 <v-card class="mx-auto" subtitle="Programming Languages" title="Technical Skills">
                     <template v-slot:prepend>
                         <v-icon color="primary" icon="mdi-account"></v-icon>
@@ -22,9 +19,7 @@
                     <v-card-text>HTML, CSS, JavaScript, PHP, SQL</v-card-text>
                 </v-card>
             </v-col>
-
-            <!-- Card 3 -->
-            <v-col cols="12"> <!-- Ocupa toda a largura em telas pequenas -->
+            <v-col cols="12">
                 <v-card class="mx-auto" subtitle="" title="Frameworks and Libraries">
                     <template v-slot:prepend>
                         <v-avatar color="blue-darken-2">
@@ -41,7 +36,7 @@
 <style scoped>
 .main-about-container {
     display: flex;
-    flex-direction: column; /* Permite empilhar os cards */
+    flex-direction: column;
     background-color: #FFFCF5;
 }
 
