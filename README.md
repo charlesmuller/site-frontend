@@ -2,30 +2,6 @@
 
 A simple and modern front-end application built with Vue 3, Vuetify, and Bootstrap Vue. This project aims to showcase my skills and serve as a portfolio to potential clients and employers.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Features
-
-- Responsive design using Vuetify and Bootstrap Vue
-- Dynamic components built with Vue 3
-- Easy-to-navigate user interface
-- Docker support for easy development setup
-
-## Technologies
-
-- [Vue 3](https://vuejs.org/)
-- [Vuetify](https://vuetifyjs.com/en/)
-- [Bootstrap Vue](https://bootstrap-vue.org/)
-- [Vite](https://vitejs.dev/)
-- [Docker](https://www.docker.com/)
-
 ## Installation
 
 To get started with this project, clone the repository and install the dependencies:

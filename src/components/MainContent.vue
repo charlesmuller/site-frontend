@@ -15,7 +15,7 @@
         </div>
         <div class="data-box">
           <div class="image-job-title">
-            <img src="/public/foto-perfil2.jpg" alt="">
+            <img src="/public/foto-perfil.jpg" alt="">
             <p>Full Stack Developer</p>
           </div>
           <div class="main-about">

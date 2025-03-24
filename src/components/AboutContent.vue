@@ -2,39 +2,26 @@
     <div class="main-things">
         <h4>Where I Worked</h4>
         <p>
-            I started my professional journey in 2007 as an intern in a supermarket, working with product organization.
-            After one year, I was promoted and began managing the produce department, a position I held for two years,
-            developing leadership and operational management skills.
+            I was born in 1991. As a child of the 90s, I had a very analog childhood, full of physical activities
+            and completely disconnected from technology. However, whenever I had the chance and access,
+            I enjoyed playing video games. The first one I fell in love with was the Super Nintendo, followed by the
+            PlayStation.
+            That’s where my passion for technology began. Since then, I had considered pursuing something related to
+            technology,
+            but this desire came a bit late—at 28, when I started my degree in Systems Analysis and Development.
+
+
         </p>
         <p>
-            In 2010, I joined the Brazilian Air Force, where I served for four years. During this time, I gained
-            valuable
-            experience, such as teamwork, leadership in challenging situations, and the ability to remain calm and
-            efficient
-            under pressure.
-        </p>
-        <p>
-            In 2015, I joined CIEE-RS, where I worked for six years. My journey started as an intern and evolved into
-            roles
-            as an assistant and later as an administrative assistant. This was a period of great learning, especially in
-            developing communication skills and working directly with the public.
-        </p>
-        <p>
-            Starting in 2021, I began my career in the technology field. I initially worked as an intern in technical
-            support,
-            and after being promoted, I served as a support analyst. In 2022, I reached an important milestone by
-            starting my
-            journey as a web developer, combining my passion for innovation with my professional experience to create
-            efficient
-            and impactful solutions.
+            Today, in 2025, I am a web developer and hold a postgraduate degree in Software Engineering.
+            I have been married for six years to a wonderful wife who supports me in everything, and we have three dogs
+            that I love dearly.
         </p>
     </div>
     <div class="main-about-container">
         <h4>Skills</h4>
         <div class="main-title-about">
-            <h4>Professional Profile</h4>
-        </div>
-        <div>
+            <h3>Professional Profile</h3>
             <p>
                 Web Developer since 2021.
                 Graduated in Systems Analysis and Development from Universidade Luterana do Brasil,
@@ -43,43 +30,33 @@
                 and agile methodologies.
             </p>
         </div>
-        <div>
-            <div class="primeiro-quadrado">
-                <h4>Technical Skills</h4>
-            </div>
-            <div>
-                <div></div>
+        <div class="quadrados">
+            <div class="quadrado-dados">
+                <img src="/src/assets/skill.svg" alt="skills icon">
+                <p>Technical Skills</p>
                 <div>
-                    <div>
-                        HTML, CSS, JavaScript, PHP, SQL
-                        <p></p>
-                    </div>
-
+                    HTML, CSS, JavaScript, PHP, SQL
+                    <p>
+                        <span class="skill-level">Advanced</span>
+                    </p>
                 </div>
             </div>
-            <div class="segundo-quadrado">
-                Frameworks and Libraries
-                Docker, Vue.js, Laravel, React, Bootstrap
-
+            <div class="quadrado-dados">
+                <img src="/src/assets/library.svg" alt="framework and library icon">
+                <p>Frameworks and Libraries</p>
+                <div>
+                    Docker, Vue.js, Laravel, React, Bootstrap
+                    <p>
+                        <span class="skill-level">Advanced</span>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="conteudo-embaixo">
         </div>
 
     </div>
-
-    <RigthMenu />
 </template>
-
-<script>
-import RigthMenu from './RigthMenu.vue';
-
-export default {
-    components: {
-        RigthMenu
-    }
-};
-</script>
 
 <style>
 .main-things {
@@ -130,13 +107,79 @@ export default {
     align-items: center;
 }
 
-.custom-card {
-    max-width: none !important;
-    width: auto;
+.main-about-container h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    align-self: flex-start;
 }
 
-.card-content {
+.main-title-about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.main-title-about h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    align-self: flex-start;
+}
+
+.main-title-about p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    align-self: flex-start;
+}
+
+.quadrados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    gap: 20px;
+}
+.quadrado-dados {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    border: #333 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.quadrado-dados img {
+    width: 30px;
+    height: 30px;
+    border-radius: 25%;
+    margin: 0;
+}
+
+.quadrado-dados p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+    text-align: left;
 }
 </style>
