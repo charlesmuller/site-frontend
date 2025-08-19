@@ -60,8 +60,8 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  width: 80%;
-  max-width: 70%;
+  width: 78%;
+  max-width: 1080px;
   margin: 30px auto;
   align-items: center;
 
@@ -79,7 +79,7 @@ export default {
 }
 
 .main-title h1 {
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -135,5 +135,83 @@ export default {
   gap: 10px;
   align-items: center;
   color: #212320;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    width: 95%;
+    max-width: 95%;
+    margin: 20px auto;
+    gap: 20px;
+  }
+
+  .content-header-left {
+    width: 100%;
+  }
+
+  .main-title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .main-content-data {
+    align-items: center;
+  }
+
+  .content-text p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .data-box {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 15px;
+  }
+
+  .image-job-title {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image-job-title p {
+    text-align: center;
+    margin: 0;
+  }
+
+  .main-about {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .data-box img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title h1 {
+    font-size: 2rem;
+  }
+
+  .content-text p {
+    font-size: 0.85rem;
+  }
+
+  .main-about {
+    gap: 15px;
+  }
+
+  .data-box img {
+    width: 35px;
+    height: 35px;
+  }
 }
 </style>

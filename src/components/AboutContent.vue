@@ -63,8 +63,8 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 80%;
-    max-width: 72%;
+    width: 78%;
+    max-width: 1080px;
     margin: 40px auto;
     padding: 20px;
     align-items: flex-start;
@@ -101,8 +101,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    width: 80%;
-    max-width: 70%;
+    width: 78%;
+    max-width: 1080px;
     margin: 30px auto;
     align-items: center;
 }
@@ -181,5 +181,111 @@
     margin: 0;
     font-weight: bold;
     text-align: left;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .main-things {
+    width: 95%;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .main-things h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .main-things p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .main-about-container {
+    width: 95%;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .main-about-container h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .main-title-about h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .main-title-about p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .quadrados {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .quadrado-dados {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    gap: 8px;
+  }
+
+  .quadrado-dados img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .quadrado-dados p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-things {
+    width: 98%;
+    max-width: 98%;
+    padding: 10px;
+  }
+
+  .main-things h4 {
+    font-size: 1.3rem;
+  }
+
+  .main-things p {
+    font-size: 0.85rem;
+  }
+
+  .main-about-container {
+    width: 98%;
+    max-width: 98%;
+    padding: 10px;
+  }
+
+  .main-about-container h4 {
+    font-size: 1.3rem;
+  }
+
+  .main-title-about h3 {
+    font-size: 1.2rem;
+  }
+
+  .main-title-about p {
+    font-size: 0.85rem;
+  }
+
+  .quadrado-dados {
+    padding: 12px;
+  }
+
+  .quadrado-dados p {
+    font-size: 0.85rem;
+  }
 }
 </style>

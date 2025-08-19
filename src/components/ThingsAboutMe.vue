@@ -30,8 +30,8 @@
     display: flex;
     flex-direction: column;
     gap: 15px; /* Add spacing between paragraphs */
-    width: 80%;
-    max-width: 72%;
+    width: 78%;
+    max-width: 1080px;
     margin: 40px auto;
     padding: 20px;
     align-items: flex-start;
@@ -59,5 +59,39 @@
 
 .main-things p:last-of-type {
     margin-bottom: 10px;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .main-things {
+    width: 95%;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .main-things h4 {
+    font-size: 1.5rem;
+  }
+
+  .main-things p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-things {
+    width: 98%;
+    max-width: 98%;
+    padding: 10px;
+  }
+
+  .main-things h4 {
+    font-size: 1.3rem;
+  }
+
+  .main-things p {
+    font-size: 0.85rem;
+  }
 }
 </style>

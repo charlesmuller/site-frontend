@@ -47,4 +47,22 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+/* Responsividade global */
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    margin-top: 2%;
+  }
+  
+  footer {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
 </style>
