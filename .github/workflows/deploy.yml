@@ -52,11 +52,10 @@ jobs:
     - name: Deploy to server
       run: |
         ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} << 'EOF'
-          cd /opt/docker-projects/charlesmuller-site || {
+          cd ~/site-charles || {
             echo "Creating project directory..."
-            sudo mkdir -p /opt/docker-projects/charlesmuller-site
-            sudo chown $USER:$USER /opt/docker-projects/charlesmuller-site
-            cd /opt/docker-projects/charlesmuller-site
+            mkdir -p ~/site-charles
+            cd ~/site-charles
           }
           
           # Clone or pull latest code
@@ -78,11 +77,20 @@ jobs:
           
           # Build and start new containers
           echo "Building and starting new containers..."
-          docker-compose -f docker-compose.prod.yml up -d --build
+          echo "Current directory contents:"
+          ls -la
+          echo "Checking required files:"
+          ls -la nginx.conf Dockerfile.prod docker-compose.prod.yml
+          
+          # Force clean build
+          docker-compose -f docker-compose.prod.yml build --no-cache
+          docker-compose -f docker-compose.prod.yml up -d
           
           # Show container status
           echo "Container status:"
           docker-compose -f docker-compose.prod.yml ps
+          
+          echo "Project location: $(pwd)"
           
           echo "Deploy completed successfully!"
         EOF
@@ -94,6 +102,9 @@ jobs:
           sleep 10
           
           # Check if container is running
+          echo "=== DEBUGGING CONTAINER STATUS ==="
+          docker ps -a | grep charlesmuller || echo "No charlesmuller containers found"
+          
           if docker ps | grep -q "charlesmuller-site"; then
             echo "✅ Container is running successfully!"
             
@@ -101,11 +112,15 @@ jobs:
             if curl -f http://localhost:3080 > /dev/null 2>&1; then
               echo "✅ Application is responding on port 3080!"
             else
-              echo "⚠️  Application might be starting up, check manually"
+              echo "⚠️  Application might be starting up, checking logs..."
+              docker-compose -f ~/site-charles/docker-compose.prod.yml logs --tail=20
             fi
           else
             echo "❌ Container is not running!"
-            docker-compose -f /opt/docker-projects/charlesmuller-site/docker-compose.prod.yml logs
+            echo "=== CONTAINER LOGS ==="
+            docker-compose -f ~/site-charles/docker-compose.prod.yml logs --tail=50
+            echo "=== ALL CONTAINERS ==="
+            docker ps -a
             exit 1
           fi
         EOF
