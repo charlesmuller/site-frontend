@@ -133,8 +133,9 @@ table {
 
 @font-face {
 	font-family: 'Maragsa';
-	src: url('@/assets/fonts/Maragsa-Display.woff2') format('woff2'),
-		url('@/assets/fonts/Maragsa-display.woff') format('woff');
+	src: url('./Maragsa-Display.woff2') format('woff2'),
+		url('./Maragsa-Display.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
