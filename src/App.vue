@@ -10,14 +10,12 @@
 
 <script>
 import NavBarSite from './components/NavBarSite.vue';
-import MainContent from './components/MainContent.vue';
 import FooterBarSite from './components/FooterBarSite.vue';
 
 export default {
   name: 'App',
   components: {
     NavBarSite,
-    MainContent,
     FooterBarSite
   },
 };
