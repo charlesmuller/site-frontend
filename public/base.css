@@ -73,6 +73,7 @@ time,
 mark,
 audio,
 video {
+    font-family: Stringer, "Times New Roman", sans-serif;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -103,7 +104,7 @@ section {
 body {
 	margin: 0;
 	padding: 0;
-	/* font-family: 'Maragsa', sans-serif;	 */
+	font-family: Stringer, "Times New Roman", sans-serif;
 	line-height: 1;
 }
 

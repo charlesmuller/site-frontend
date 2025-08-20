@@ -56,7 +56,7 @@
     color: #555;
     line-height: 1.6;
     text-align: justify;
-    font-family: 'Arial', sans-serif;
+    font-family: Stringer, "Times New Roman", sans-serif;
 }
 
 .main-things p:first-of-type {

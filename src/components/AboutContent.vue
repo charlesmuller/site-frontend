@@ -83,7 +83,7 @@
     color: #555;
     line-height: 1.6;
     text-align: justify;
-    font-family: 'Arial', sans-serif;
+    font-family: Stringer, "Times New Roman", sans-serif;
 }
 
 .main-things p:first-of-type {
@@ -141,7 +141,7 @@
     color: #555;
     line-height: 1.6;
     text-align: justify;
-    font-family: 'Arial', sans-serif;
+    font-family: Stringer, "Times New Roman", sans-serif;
     width: 100%;
     align-self: flex-start;
 }
@@ -166,6 +166,7 @@
     padding: 10px;
     border-radius: 10px;
     gap: 10px;
+    height: 88px;
 }
 
 .quadrado-dados img {

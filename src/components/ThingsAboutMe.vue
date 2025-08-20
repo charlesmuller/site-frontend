@@ -50,7 +50,7 @@
     color: #555; /* Subtle color for readability */
     line-height: 1.6; /* Better line spacing */
     text-align: justify; /* Justify the paragraph text */
-    font-family: 'Arial', sans-serif; /* Modern font style */
+    font-family: Stringer, "Times New Roman", sans-serif;
 }
 
 .main-things p:first-of-type {
