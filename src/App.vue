@@ -39,12 +39,7 @@ body,
   flex-grow: 1;
 }
 
-footer {
-  margin-top: auto;
-  background-color: #E8E8E3;
-  padding: 10px;
-  text-align: center;
-}
+/* Footer styles moved to FooterBarSite.vue */
 
 /* Responsividade global */
 @media (max-width: 768px) {

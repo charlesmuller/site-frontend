@@ -3,9 +3,9 @@
     <div class="main-list">
         <ul>
             <li>
-                <router-link to="/things-about-me">
-                    <img src="/src/assets/profile.svg">
-                    <p>Things about me</p>
+                <router-link to="/my-projects">
+                    <img src="/src/assets/library.svg">
+                    <p>My projects</p>
                 </router-link>
             </li>
             <li>
@@ -45,16 +45,19 @@
 }
 
 .content-header-right a {
-    transition: background-color 0.5s ease, color 0.5s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    padding: 8px 12px;
 }
 
 .content-header-right a:hover {
-    background-color: #E8E8E3;
+    background-color: #4a90e2;
     border-radius: 5px;
-    color: #212320;
-    transform: scale(1.1);
+    color: #ffffff;
+    transform: translateY(-2px) scale(1.05);
     cursor: pointer;
     width: 100%;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
 }
 
 /* Responsividade para mobile */
@@ -101,8 +104,50 @@
   }
 
   .content-header-right a {
-    padding: 12px;
-    font-size: 0.9rem;
+    padding: 10px 8px;
+    font-size: 0.85rem;
+  }
+
+  .content-header-right img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .content-header-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-list ul {
+    gap: 6px;
+  }
+
+  .content-header-right a {
+    padding: 8px 6px;
+    font-size: 0.8rem;
+  }
+
+  .content-header-right img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-list ul {
+    gap: 5px;
+  }
+
+  .content-header-right a {
+    padding: 6px 4px;
+    font-size: 0.75rem;
+  }
+
+  .content-header-right img {
+    width: 14px;
+    height: 14px;
   }
 }
 </style>

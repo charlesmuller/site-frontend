@@ -1,0 +1,16 @@
+# Desenvolvimento super otimizado com volumes
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Instalar dependências (será cacheado)
+COPY package*.json ./
+RUN npm ci --legacy-peer-deps && npm cache clean --force
+
+# Criar diretório para node_modules
+RUN mkdir -p node_modules
+
+EXPOSE 5173
+
+# O código será montado via volume
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]

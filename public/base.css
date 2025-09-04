@@ -73,7 +73,7 @@ time,
 mark,
 audio,
 video {
-    font-family: Stringer, "Times New Roman", sans-serif;
+    font-family: var(--font-primary);
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -83,7 +83,8 @@ video {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	/* font-family: 'Maragsa', sans-serif; */
+	font-family: var(--font-primary);
+	font-weight: normal;
   }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,7 +105,7 @@ section {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Stringer, "Times New Roman", sans-serif;
+	font-family: var(--font-primary);
 	line-height: 1;
 }
 
@@ -138,4 +139,57 @@ table {
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
+}
+
+/* Definição da fonte Stringer */
+@font-face {
+	font-family: 'Stringer';
+	src: url('./Stringer.woff2') format('woff2'),
+		url('./Stringer.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Variáveis CSS para fontes padronizadas */
+:root {
+    --font-primary: 'Stringer', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-fallback: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Scroll suave global */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Melhorias para dispositivos pequenos */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Prevenção de zoom horizontal em dispositivos móveis */
+@media (max-width: 480px) {
+    body {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+}
+
+/* Melhor legibilidade em telas pequenas */
+@media (max-width: 360px) {
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Otimizações para telas muito pequenas */
+@media (max-width: 320px) {
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+    }
 }
